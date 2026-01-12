@@ -19,11 +19,20 @@
 			"Name": "TAToys",
 			"Type": "Editor",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "CustomInterchangePipeline",
+			"Type": "Editor",
+			"LoadingPhase": "PreDefault"
 		}
 	],
 	"Plugins": [
 		{
 			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"Name":"Interchange",
 			"Enabled": true
 		}
 	]
