@@ -61,6 +61,7 @@ FString UTextureAssetNameNormalizer::GetNormalizedName(const FString& InTextureN
 		{
 			UE_LOG(LogTemp, Display, TEXT("Find{%s} At:%d"), *TypeKeyword,  KeywordIndex);
 			TextureType=KeywordToTypeMap[TypeKeyword];
+			TextureType.RightChopInline(8);
 			break;
 		}
 	}
